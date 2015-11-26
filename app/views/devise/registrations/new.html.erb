@@ -17,9 +17,14 @@
     <%= f.label :gender %><br>
     <%= f.select :gender, ['male', 'female', 'undisclosed'], include_blank: true %>
   </div>
+  
+  <div class="field">
+    <%= f.label "Pick a username" %><br>
+    <%= f.text_field :username %>
+  </div>
 
   <div class="field">
-    <%= f.label :password %>
+    <%= f.label "Pick a password" %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
@@ -27,7 +32,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label "Confirm your password" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
