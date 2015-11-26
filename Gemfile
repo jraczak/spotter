@@ -30,6 +30,9 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
 gem 'omniauth'
 
+# Add rails12factor to fix assets issue on Heroku
+gem 'rails_12factor', group: :production
+
 
 
 # Use ActiveModel has_secure_password
