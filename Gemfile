@@ -26,6 +26,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Add bootstrap to the project
 gem 'bootstrap-sass', '~> 3.3.6'
 
+# Add gems for authentication and user management
+gem 'devise'
+gem 'omniauth'
+
 
 
 # Use ActiveModel has_secure_password
